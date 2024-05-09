@@ -1,34 +1,121 @@
-body {
-    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg"); 
-    background-size: auto 100vh;
-    font-family: Arial;
-    height: 100vh;
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Source Code Pro", Roboto;
+}
+
+body, html {
+  background-image: url("../img/background-site.jpg"); 
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../img/google-android.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../img/android-black.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("../img/android-contact.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
   }
-  
-  a {
-    text-decoration: none;
-    color: #191970;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    color: #191970;
-    text-align: center;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #191970;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.site-subtitle,
+.site-title {
+  color: #191970;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.site-subtitle {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0px;
+}
+
+.portifolio {
+  padding: 2em;
+}
+
+.portifolio h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 2em;
+}
+
+.img-portifolio {
+  height: 400px;
+  width: 200px;
+  border-radius: 16px;
+}

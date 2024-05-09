@@ -1,21 +1,301 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Denise Castro</title>
-        <link rel="stylesheet" href="./site-css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-              <ul>
-                <li><a href="#">Sobre</li>
-                <li><a href="#">Portifólio</li>
-                <li><a href="#">Contato</li>
-              </ul>
-            </nav>
-                <h1 class="site-title">Denise Castro</h1>
-                <h2 class="site-subtitle">android developer</h2>
-        </header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denise Castro</title>
+
+    <link rel="stylesheet" href="./site-css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    
+</head>
+
+<body">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">
+        <i class="fa fa-search"></i>
+      </a>
+  </div>
+
+   <!-- Navbar on small screens -->
+   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div> 
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">Android <span class="w3-hide-small">Developer</span> com orgulho</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Apaixonada por tecnologia</em></p>
+  <p>
+    Nasci em Natal, RN e ainda bebê, meus pais foram morar na cidade do Rio de Janeiro, bairro da Glória, onde vivi 27 anos. Desde cedo me apaixonei pela tacnologia e tinha a curiosidade de saber como as coisas aconteciam. 
+    Em 2015, fiz o Enem e em abril de 2016, ingressei no IFRN para começar a minha graduação em Tecnologia em Sistemas para Internet, onde tive a oportunidade de conhecer os bastidores desse mundo mágico. Cada disciplina estudada
+    era um mundo de possibilidades e de sonhos... Saber que com o conhecimento adquirido, é possível transformar vidas. A tecnologia permite ir ao banco sem sair de casa, como isso é fantástico!! Também permite falar com quem amamos
+    e o melhor, vê-los em tempo real, através de uma video chamada.Ela também possibilita solicitar um transporte, um lanche ou almoço, ouvir a playlist selecionada com tanto cuidado, e quem poderia dizer que algum dia seria possível,
+    trabalhar para grandes empresas, sem precisar enfrentar horas de ônibus lotados e contribuir para a economia do país e fazer toda essa magia acontecer.
+    Ser profissional de tecnologia, é ser uma facilitadora da vida, é proporcionar conforto, segurança, bem-estar, é resolver problemas.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Denise Castro</b></p><br>
+      <img src="./img/minha_foto.jpeg" class="w3-circle w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        Como profissional de tecnologia, tive grandes desafios, desde quando ainda era estudante universitária,
+        e escolhi fazer um TCC criando um aplicativo mobile, utilizando Java como tecnologia principal para o desenvolvimento. O escopo do aplicativo
+        é permitir que usuários do transporte público do Rio Grande do Norte, possam avisar a polícia quando suspeitarem de assaltos dentro dos ônibus. 
+        A proposta de funcionamento é diferente dos botões de pânico, pois estes estão disponíveis apenas para os motoristas, que só avisam quando o assalto 
+        já está em andamento ou finalizado. Mas, o "Safe Bus", permite a qualquer cidadão, acionar o botão e em poucos minutos a viatura policial mais próxima 
+        pode chegar e impedir que o assalto chegue a acontecer. 
+        Ainda como estudante, e próximo a concluir a faculdade, tive outro grande desafio a encarar: fui contratada para atuar como desenvolvedora Android 
+        em uma gigante da tecnologia sem ter nenhuma experiência. Claro que aceitei o desafio e hoje, sou uma profissional que agrega valor com a minha contratação.
+      </p>
+    </div>
+
+    <div class="w3-row w3-center w3-white w3-padding-16">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" width="30" height="30"/></span><br>
+        Android
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="30" height="30"></span><br>
+        Java
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="30" height="30"></span><br>
+        Kotlin
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" width="30" height="30"></span><br>
+        Jetpack Compose
+      </div>
+    </div>
+        
+  <!-- Interests --> 
+  <div class="w3-card w3-round w3-white w3-hide-small">
+    <div class="w3-container">
+      <p>Interests</p>
+      <p>
+        <span class="w3-tag w3-small w3-theme-d5">Android</span>
+        <span class="w3-tag w3-small w3-theme-d4">Kotlin</span>
+        <span class="w3-tag w3-small w3-theme-d3">Jetpack Compose</span>
+        <span class="w3-tag w3-small w3-theme-d2">Java</span>
+        <span class="w3-tag w3-small w3-theme-d1">Ubuntu</span>
+        <span class="w3-tag w3-small w3-theme">macOS</span>
+        <span class="w3-tag w3-small w3-theme-l1">Firebase</span>
+      </p>
+    </div>
+  </div>
+  <br>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<h3 class="w3-center">MY WORK</h3>
+<p class="w3-center"><em>Aqui, alguns projetos pessoais.<br> Click para ver em tamanho maior.</em></p><br>
+
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="w3-row-padding w3-center">
+  <div class="w3-col m3">
+    <img src="./img/app-rick-and-morty.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="App Rick and Morty">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="./img/app-sorteio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="App sorteio">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="./img/stop-watch.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="App Stop watch">
+  </div>
+
+  <div class="w3-col m3">
+    <img src="./img/motivation.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="App motivation">
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+<div class="w3-modal-content w3-animate-zoom w3-center w3-padding-64">
+  <img id="img01" class="w3-image">
+  <p id="caption" class="w3-opacity w3-large"></p>
+</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+  <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+</div>
+</div>
+
+<div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original-wordmark.svg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+  <h4>Android Developer - Jun 2023 – Mar 2024 (Stone)</h4><br>
+  <hr class="w3-clear">
+  <p>Atuei na criação de novas features, atualizações e correções de bugs. 
+  As tecnologias utilizadas no time: Android Studio para o desenvolvimento do código, Kotlin,
+  Jetpack Compose; Figma, Swagger, Jira e a metodologia ágil o Scrum, onde a sprint é a cada 15 dias e, para
+  compartilhamento de código, o Github. Todo código era devidamente testado, sendo para cada classe do tipo
+  ViewModel, uma classe de teste correspondente, com código escritos utilizando o Junit.</p>
+</div>  
+
+<div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original-wordmark.svg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+
+  <h4>Android Developer - Jun 2021 - Abr 2023 (Compasso UOL)</h4><br>
+  <hr class="w3-clear">
+  
+  <p>
+  Atuei com design system, desenvolvendo os componentes usados no aplicativo da empresa, para que todos os
+  componentes pudessem ser padronizados e utilizados por todos os times, evitando assim que houvesse
+  divergência de formas e cores nos componentes visuais (Buttons, SnackBar, Bottom Sheets, etc).
+  Trabalhei com CI / CD, utilizando Bitrise / Jenkins. O desenvolvimento Android nativo, utilizando o sistema de views com
+  Kotlin. Também como parte da rotina, code review, deploy faseado na Play Store, suporte aos membros
+  desenvolvedores de outros times com dificuldades na criação de hotfix, por exemplo. Fui escolhida para ser a Security
+  Champion do time, ou seja, a pessoa intermediária entre o time de segurança e o meu time. O meu papel consistia em
+  ajudar ao pessoal do time com relação às possíveis vulnerabilidades de segurança e, em caso de existir alguma
+  vulnerabilidade, levar ao conhecimento do time de segurança para que eles pudessem agir de acordo com as normas
+  da empresa. Tecnologias utilizadas: Kanban, Jira, Confluence, Miro (para nossas cerimônias ágeis), Figma, Bitrise,
+  Jenkins, além é claro do Android Studio para o desenvolvimento do código, utilizando Kotlin como tecnologia principal e,
+  eventualmente o Java, para compartilhamento de código, o Github e para testes, o Espresso para os testes relativos
+  aos componentes visuais e o Junit para os testes de unidade.
+  </p>
+</div> 
+
+<div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original-wordmark.svg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+
+<h4>Android Developer - Mar 2021 - Jun 2021 (Compasso UOL)</h4><br>
+<hr class="w3-clear">
+
+<p>
+  Aqui, o início de tudo!
+  Comecei no dia 10 de março, fazendo parte do programa de shadow em um time de investimentos. Tive um desenvolvedor mais experiente como padrinho,
+  que foi a pessoa que me ensinou sobre as regras de negócio, sobre as metodologias ágeis, e também as dicas de comportamento nas cerimônias. Após
+  três meses, fui direcionada para outro time como Desenvolvedora Junior.
+</p>
+</div>  
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Mensagem</h3>
+  <p class="w3-center"><em>Vou gostar de receber seu feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="./img/e-mail-team.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Natal, RN<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +55 (84) 9 9123-2738<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: dmaria.natal@gmail.com<br>
+      </div>
+
+      <div class="container">
+        <form target="_blank" action="https://formsubmit.co/dmaria.natal@gmail.com" method="POST">
+          <div class="form-group w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input type="hidden" name="_url" value="https://file:///home/ubuntu23/Documentos/portifolio/index.html#contact">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nome">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input type="hidden" name="_captcha" value="false">
+            </div>
+          </div>
+          <textarea class="form-group w3-input w3-border" type="text" placeholder="Mensagem" rows="20" required name="Mensagem"></textarea>
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir para o topo da página</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/denise.leandrodecastro/" target="_blank" class="w3-hover-text-gray"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://github.com/DeniseLeandroDeCastro" target="_blank" class="w3-hover-text-gray"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/denise-castro-59425b4a/" target="_blank" class="w3-hover-text-gray"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+    
+  </div>
+  <p>by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Denise Castro</p>
+</footer>
+  
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+   
+</body>
 </html>
+          
