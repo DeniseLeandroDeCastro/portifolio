@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
-body,h1,h2,h3,h4,h5,h6 {
+body,h1,h2,h3,h4,h5,h6,p {
   font-family: "Source Code Pro", Roboto;
+  color: black;
 }
 
 body, html {
   background-image: url("../img/background-site.jpg"); 
+  background-color: beige;
   height: 100%;
   color: #777;
   line-height: 1.8;
